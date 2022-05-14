@@ -1,0 +1,13 @@
+CREATE TABLE posts (
+id SERIAL PRIMARY KEY,
+uid INTEGER NOT NULL,
+post VARCHAR(500) NOT NULL,
+date timestamp without time zone
+);
+
+CREATE TABLE users (
+id SERIAL PRIMARY KEY,
+username varchar(120),
+email varchar(120),
+phone_number varchar(15)
+);
